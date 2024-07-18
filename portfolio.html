@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mark Valentino - Graphics Portfolio</title>
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+	<script>
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+		if(!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for(i = 0; i < 4; i++) {
+				var openDropdown = dropdowns[i];
+				if(openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+	</script>
+</head>
+
+<body onload='document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(9/1080) +5 + "px";' onresize='document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(9/1080) +5 + "px";'>
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn"> ☰ </button>
+		<div id="myDropdown" class="dropdown-content"> <a href="/index.html">Home</a> <a href="/skills.html">Skills</a> <a href="/web_dev_portfolio.html">Web Dev Portfolio</a> <a href="/portfolio.html">Graphics Portfolio</a> </div>
+	</div>
+	<header>
+		<center><span style="white-space: nowrap;"><img width="0.5%" src="/assets/img/8_star.png" alt="" class="vert-move8" /> <img width="1%" src="/assets/img/8_star.png" alt="" class="vert-move7" /> <img width="1.5%" src="/assets/img/8_star.png" alt="" class="vert-move6" /> <img width="2%" src="/assets/img/8_star.png" alt="" class="vert-move5" /> <img width="2.5%" src="/assets/img/8_star.png" alt="" class="vert-move4" /> <img width="3%" src="/assets/img/8_star.png" alt="" class="vert-move3" /> <img width="3.5%" src="/assets/img/8_star.png" alt="" class="vert-move2" /> <img width="4%" src="/assets/img/8_star.png" alt="" class="vert-move" /> <a href="/index.html"><img id="logo" src="/assets/img/logo%20assembly%20cropped.png" alt="Mark Valentino - logo with ionic columns" onmouseover="this.src='/assets/img/logo%20assembly%20wireframe.png'" onmouseout="this.src='/assets/img/logo%20assembly%20cropped.png'"></a> <img width="4%" src="/assets/img/8_star.png" alt="" class="vert-move" /> <img width="3.5%" src="/assets/img/8_star.png" alt="" class="vert-move2" /> <img width="3%" src="/assets/img/8_star.png" alt="" class="vert-move3" /> <img width="2.5%" src="/assets/img/8_star.png" alt="" class="vert-move4" /> <img width="2%" src="/assets/img/8_star.png" alt="" class="vert-move5" /> <img width="1.5%" src="/assets/img/8_star.png" alt="" class="vert-move6" /> <img width="1%" src="/assets/img/8_star.png" alt="" class="vert-move7" /> <img width="0.5%" src="/assets/img/8_star.png" alt="" class="vert-move8" /></span></center>
+	</header>
+	<nav>
+		<div id="sitenav" display: style="inline-block;">
+  		<div class="bordera">
+  			<a href="/index.html" accesskey="h">
+  				<div class="navtext">Home</div>
+  			</a>
+  		</div>
+  		<div class="bordera">
+  			<a href="/skills.html">
+  				<div class="navtext" accesskey="s">Skills</div>
+  			</a>
+  		</div>
+  		<div class="bordera">
+  			<a href="/web_dev_portfolio.html">
+  				<div class="navtext" accesskey="w">Web Dev Portfolio</div>
+  			</a>
+  		</div>
+  		<div class="bordera">
+  			<a href="/portfolio.html">
+  				<div class="navtext" accesskey="g">Graphics Portfolio&nbsp;&nbsp;&nbsp;</div>
+  			</a>
+		  </div>
+  		<div class="bordera">
+  			<a href="https://github.com/M-Valentino">
+  				<div class="navtext" accesskey="g">GitHub&nbsp;&nbsp;&nbsp;</div>
+  			</a>
+		  </div>
+	  </div>
+	</nav>
+	<center>
+		<div id="border7w" display: style="inline-block;">
+			<div id="border6">
+				<div id="border2">
+					<div id="border1">
+						<div id="border3">
+							<div id="border4">
+								<div id="border5">
+									<main>
+										<center>
+											<figure> <img src="https://mvalentino.neocities.org/assets/img/3D_hand_drawn_cube_rotating_animation.gif" alt="Rotating cube">
+												<figcaption>The rotating cube animation was made without 3D modeling, and drawn line by line in AutoCAD. I know my geometry!</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/cad_c.png"><img src="/assets/img/cad_c.png" width="85%" alt="Isometric technical drawing of a car"></a>
+											  <figcaption>Isometric technical drawing of a car inspired by '80s Cadillacs. This was also made without 3D modeling in AutoCAD.</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/headphones_housing_inventor_assembly.png"><img src="/assets/img/headphones_housing_inventor_assembly.png" width="55%" alt="Inventor assembly of headphones"></a>
+											  <figcaption>A multi-part assembly of a pair of headphones designed in AutoDesk Inventor.</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/deadly%20cigarettes.png"><img src="/assets/img/deadly%20cigarettes.png" width="45%" alt="Illustration of a cartoonish pack of cigarettes"></a>
+											  <figcaption>An illustration of a cartoonish pack of cigarettes. Created in Adobe Illustrator.</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/tmnf_crop.svg"><img src="/assets/img/tmnf_crop.svg" width="85%" alt="logo for Teach My Name First"></a>
+											  <figcaption>An SVG logo for an early childhood education program. Created with Inkscape and AutoCAD. The logo's appearance was fine tuned using a text editor.</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/sturdy_computer_desk.png"><img src="/assets/img/sturdy_computer_desk.png" width="85%" alt="CAD multi-view drawing of a computer desk"></a>
+											  <figcaption>CAD multi-view drawing of a computer desk.</figcaption>
+											</figure>
+										  <br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/comming_soon_to_a_store_near_you.png"><img src="/assets/img/comming_soon_to_a_store_near_you.png" width="85%" alt="3D render of a virtual pet handheld game"></a>
+											  <figcaption>3D model of a virtual pet handheld game. Created in AutoDesk Inventor.</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/fan design magazine page.png"><img src="/assets/img/fan design magazine page.png" width="45%" alt="Mockup of a computer fan magazine page"></a>
+											  <figcaption>A mockup for a magazine article created in Adobe InDesign.</figcaption>
+											</figure>
+											<br>
+										</center>
+										<center>
+											<figure> <a href="/assets/img/background.png"><img src="/assets/img/background.png" width="85%" alt="colorful geometric design slightly reminiscent of the Art Deco style"></a>
+											  <figcaption>A geometric background slightly reminiscent of the Art Deco style.</figcaption>
+											</figure>
+										  <br>
+										</center>
+										<center>
+										  <figure> <a href="/assets/img/homer%20simpson%20edited%20to%20look%20like%20cel%20animation.png"><img src="/assets/img/homer%20simpson%20edited%20to%20look%20like%20cel%20animation.png" alt="Screenshot of modern Simpsons episode photoshopped to look like it was made in cel animation"></a>
+										    <figcaption>Screenshot of modern Simpsons episode photoshopped to look like it was made in cel animation.</figcaption>
+										  </figure>
+										  </center>
+									</main>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+	<br>
+	<br> 
+	</body>
+
+</html>

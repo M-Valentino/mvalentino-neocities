@@ -1,0 +1,332 @@
+h1 {
+	font-family: Times, serif;
+	border-style: solid;
+	border-color: #EEE;
+	background: #EEE;
+	font-size: 64px;
+	position: absolute;
+	top: 0;
+	padding: 12px;
+	box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.1);
+	border-radius: 0 4px 4px 0;
+}
+
+h2 {
+	font-family: Times, serif;
+	font-size: 24px;
+	margin:0;
+  padding:0;
+}
+
+h2::before {
+  content: url('/assets/img/scroll.svg');
+  width: 24px;
+  height: 12%;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+h2::after {
+  content: url('/assets/img/scroll.svg');
+  width: 24px;
+  height: 12%;
+  display: inline-block;
+}
+
+.quote {
+	position: absolute;
+	top: 24vh;
+	left: 15%;
+	font-family: Times, serif;
+	font-size: 36px;
+	color: #fff;
+	text-shadow: #000 2px 0 4px, #000 0 2px 4px, #000 -2px 0 4px, #000 0 -2px 4px, #000 0 3px 4px;
+	text-rendering: optimizeLegibility;
+	z-index: 2;
+	letter-spacing: 0.5px;
+}
+
+body, html {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: #D7D1C0;
+	background-image: linear-gradient(35deg, rgba(0,0,0,0.03) 3.13%, rgba(0,0,0,0) 3.13%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.03) 50%, rgba(0,0,0,0.03) 53.13%, rgba(0,0,0,0) 53.13%, rgba(0,0,0,0) 100%);
+	background-repeat: repeat;
+	background-size: 55.79px 39.06px;
+}
+
+a {
+  color: #421;
+}
+
+.bg {
+	background-image: url("/assets/img/amsterdam-5367020_1920.jpg"), url("/assets/img/amsterdam-5367020_400.png");
+	height: 32vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-animation: slide 30s linear infinite;
+	-moz-animation: slide 30s linear infinite;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes slide {
+	from {
+		background-position: 0 25%;
+	}
+
+	to {
+		background-position: 0 50%;
+	}
+}
+
+.border {
+	border-style: solid;
+	padding: 32px;
+	border-color: #EEE;
+	box-shadow: 0 8px 10px 10px rgba(0,0,0,0.01), 0 4px 5px 5px rgba(0,0,0,0.03), 0 3px 3px 0 rgba(0,0,0,0.05), 0 2px 1px 0 rgba(0,0,0,0.07);
+	background: #EEE;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-rendering: optimizeLegibility;
+	border-radius: 4px 4px 4px 4px;
+}
+
+#social_media {
+	position: absolute;
+	top: 15%;
+	right: 15%;
+}
+
+.location {
+	position: absolute;
+	top: 0;
+	right: 15%;
+	border-style: solid;
+	padding: 8px;
+	border-color: #EEE;
+	box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.1);
+	background: #EEE;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000;
+	font-size: 22px;
+	border-radius: 0 0 4px 4px;
+}
+
+.contact {
+	position: absolute;
+	top: 0;
+	right: 37%;
+	border-style: solid;
+	padding: 8px;
+	border-color: #EEE;
+	box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.1);
+	background: #EEE;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000;
+	font-size: 22px;
+	border-radius: 0 0 4px 4px;
+}
+
+.invert {
+	box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.1);
+	border-radius: 4px 4px 4px 4px;
+}
+
+.invert:hover {
+	animation: inversion 0.25s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes inversion {
+	from {
+		filter: invert(0);
+	}
+
+	to {
+		filter: invert(1);
+	}
+}
+
+.zoom {
+	transition: transform .2s;
+}
+
+.zoom:hover {
+	transform: scale(1.1);
+}
+
+p.line {
+	border-style: solid none none none;
+	border-color: rgba(0,0,0,0.3);
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+::-moz-selection {
+	color: #E9E4D9;
+	background: rgba(0,0,0,0.7);
+}
+
+::selection {
+	color: #E9E4D9;
+	background: rgba(0,0,0,0.7);
+}
+
+.dropbtn {
+	min-width: 70px;
+	background-color: #eee;
+	color: #000;
+	font-size: 28px;
+	padding: 4px;
+	border: none;
+	cursor: pointer;
+	border-radius: 0 0 4px 0;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #000;
+	color: #FFF;
+}
+
+.dropdown {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #eee;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.1);
+	border-radius: 0 4px 4px 0;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul.bot {
+  padding: 0;
+  margin-left: 15%;
+	margin-right: 15%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, sans-serif;
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  
+  ul.bot {
+    flex-direction: column;
+    line-height: 2;
+    text-align: center;
+  }
+  
+	.contact {
+		display: none;
+		visibility: hidden;
+		;
+	}
+
+	.location {
+		display: none;
+		visibility: hidden;
+		;
+	}
+
+	.border {
+		font-size: large !important;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		padding: 0.4em;
+	}
+
+	p {
+		display: block;
+	}
+
+	.quote {
+		position: absolute;
+		top: 33vh;
+		left: 1.5%;
+		font-size: 17px;
+		width: 60%;
+	}
+
+	.bg {
+		height: 50vh;
+		-webkit-animation: none;
+		-moz-animation: none;
+	}
+
+	h1 {
+		font-size: 24px;
+		top: 11vh;
+	}
+
+	#social_media {
+		position: absolute;
+		top: 33vh;
+		right: 1.5%;
+	}
+
+	.invert {
+		width: 50px;
+	}
+
+	p.line {
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+		padding: 0.4em;
+	}
+
+	.bg { /*May be redundant, but this is a placeholder */
+		background-image: url("/assets/img/amsterdam-5367020_1920.jpg"), url("/assets/img/amsterdam-5367020_400.png");
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.dropdown {
+		display: none;
+	}
+}

@@ -1,0 +1,58 @@
+/**
+ * This program generates random YT ID's that most likely don't exist. If it does generate an ID linking
+ * to an actual YT video, it will print the full URL of that video and stop printing. This program was
+ * inspired by Tom Scott's video "Will YouTube Ever Run Out Of Video IDs?" to see how likely it is to
+ * encounter a YouTube video by generating a random YouTube ID which has 64^11 possible results. Based
+ * on how "quickly" this program works, you'll be sitting here for a while. 
+ * 
+ * @author Mark V. 
+ */
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.Random;
+import java.util.Scanner;
+
+public class SkimmingYT {
+   public static void main(String args[]) throws IOException {
+	  
+	  // Loop to generate Random 11 digit base64 YT IDs
+      for (int j = 0; j <1000000000; j++) {
+    	  
+    	  // Char array contains all possible digits in base 64 ID
+    	  char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-".toCharArray();
+    	  StringBuilder sd = new StringBuilder(11);
+    	  Random random = new Random();
+    	  for (int i = 0; i < 11; i++) {
+    	      char c = chars[random.nextInt(chars.length)];
+    	      sd.append(c);
+    	  }
+    	  String output = sd.toString();
+    	  System.out.println(output);
+
+    	  
+	        URL url = new URL("https://www.youtube.com/watch?v=" + output);
+	        
+	        // Retrieving the contents of the specified page
+	        Scanner sc = new Scanner(url.openStream());
+	        // Instantiating the StringBuffer class to hold the result
+	        StringBuffer sb = new StringBuffer();
+	        while(sc.hasNext()) {
+	           sb.append(sc.next());
+	    
+	        }
+	        // Retrieving the String from the String Buffer object
+	        String result = sb.toString();
+
+
+	        if (result.contains("skeleton flexy")) { // Phrase found in real YT page sources
+	        	
+	        	System.out.println(url); // Prints URL of real YT video
+	        	System.exit(0);
+	        	
+	        }
+ 
+		}
+            
+   }
+}

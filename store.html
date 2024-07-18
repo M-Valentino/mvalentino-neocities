@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link href="/css/store.css" rel="stylesheet" type="text/css" media="all">
+ 
+  </head>
+<body>
+<div class="top">&nbsp;<img src="/assets/img/swiss_clock_co.png" width="180px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="link">Watches</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="link">Wall Clocks</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="link">Accessories</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="link">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="link">Log In</a> <div id="search"><input type="text" id="search" name="search"></div><a href="#"><img src="/assets/img/mglass.png" class="search"></a></div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <center><a href="https://pixabay.com/photos/wrist-watch-clock-antique-3269385/"><img src="/assets/img/wrist-watch-3269385_1920.jpg" style="width:100%"></a></center>
+</div>
+<div class="mySlides fade">
+  <center><a href="https://pixabay.com/photos/male-watch-wrist-watch-packshot-188780/"><img src="/assets/img/male-watch-188780_1920.jpg" style="width:100%"></a></center>
+</div>
+<div class="mySlides fade">
+  <center><a href="https://pixabay.com/photos/accuracy-circle-clock-clock-face-3652513/"><img src="/assets/img/accuracy-3652513_1920.jpg" style="width:100%"></a></center>
+</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<center><div class="quote">Bold, Luxurious, Swiss</div></center>
+ <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+</body>
+<!--Slideshow code from W3Schools-->
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mark Valentino - Skills</title>
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+	<style>
+	#left {
+		text-align: left;
+	}
+	</style>
+	<script>
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+		if(!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for(i = 0; i < 4; i++) {
+				var openDropdown = dropdowns[i];
+				if(openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+	</script>
+</head>
+
+<body onload='document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(9/1080) +5 + "px";' onresize='document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(9/1080) +5 + "px";'>
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn"> ☰ </button>
+		<div id="myDropdown" class="dropdown-content"> <a href="/index.html">Home</a> <a href="/skills.html">Skills</a> <a href="/web_dev_portfolio.html">Web Dev Portfolio</a> <a href="/portfolio.html">Graphics Portfolio</a> </div>
+	</div>
+	<header>
+		<center><span style="white-space: nowrap;"><img width="0.5%" src="/assets/img/8_star.png" alt="" class="vert-move8" /> <img width="1%" src="/assets/img/8_star.png" alt="" class="vert-move7" /> <img width="1.5%" src="/assets/img/8_star.png" alt="" class="vert-move6" /> <img width="2%" src="/assets/img/8_star.png" alt="" class="vert-move5" /> <img width="2.5%" src="/assets/img/8_star.png" alt="" class="vert-move4" /> <img width="3%" src="/assets/img/8_star.png" alt="" class="vert-move3" /> <img width="3.5%" src="/assets/img/8_star.png" alt="" class="vert-move2" /> <img width="4%" src="/assets/img/8_star.png" alt="" class="vert-move" /> <a href="/index.html"><img id="logo" src="/assets/img/logo%20assembly%20cropped.png" alt="Mark Valentino - logo with ionic columns" onmouseover="this.src='/assets/img/logo%20assembly%20wireframe.png'" onmouseout="this.src='/assets/img/logo%20assembly%20cropped.png'"></a> <img width="4%" src="/assets/img/8_star.png" alt="" class="vert-move" /> <img width="3.5%" src="/assets/img/8_star.png" alt="" class="vert-move2" /> <img width="3%" src="/assets/img/8_star.png" alt="" class="vert-move3" /> <img width="2.5%" src="/assets/img/8_star.png" alt="" class="vert-move4" /> <img width="2%" src="/assets/img/8_star.png" alt="" class="vert-move5" /> <img width="1.5%" src="/assets/img/8_star.png" alt="" class="vert-move6" /> <img width="1%" src="/assets/img/8_star.png" alt="" class="vert-move7" /> <img width="0.5%" src="/assets/img/8_star.png" alt="" class="vert-move8" /></span></center>
+	</header>
+	<nav>
+<div id="sitenav" display: style="inline-block;">
+  		<div class="bordera">
+  			<a href="/index.html" accesskey="h">
+  				<div class="navtext">Home</div>
+  			</a>
+  		</div>
+  		<div class="bordera">
+  			<a href="/skills.html">
+  				<div class="navtext" accesskey="s">Skills</div>
+  			</a>
+  		</div>
+  		<div class="bordera">
+  			<a href="/web_dev_portfolio.html">
+  				<div class="navtext" accesskey="w">Web Dev Portfolio</div>
+  			</a>
+  		</div>
+  		<div class="bordera">
+  			<a href="/portfolio.html">
+  				<div class="navtext" accesskey="g">Graphics Portfolio&nbsp;&nbsp;&nbsp;</div>
+  			</a>
+		  </div>
+  		<div class="bordera">
+  			<a href="https://github.com/M-Valentino">
+  				<div class="navtext" accesskey="g">GitHub&nbsp;&nbsp;&nbsp;</div>
+  			</a>
+		  </div>
+	  </div>
+	</nav>
+	<center>
+		<div id="border7" display: style="inline-block;">
+			<div id="border6">
+				<div id="border2">
+					<div id="border1">
+						<div id="border3">
+							<div id="border4">
+								<div id="border5">
+									<main>
+										<h2>SOFTWARE SKILLS:</h2>
+										<div id="left">
+											<ul>
+												<li>Software: VS Code, Android Studio, Jupyter Notebook, AutoCAD (certified), AutoDesk Inventor (certified), Solid Works, Adobe Illustrator, InDesign, Photoshop, Premiere Pro, Inkscape, Audacity</li>
+												<li>Languages: Java, C++, Python, Kotlin, CSS, JavaScript, HTML</li>
+											</ul>
+										</div>
+										<br>
+										<h2>OPERATING SYSTEM SKILLS:</h2>
+										<div id="left">
+											<ul>
+												<li>Proficient in Windows operating systems (current and older).
+													<li>Can configure and install virtual machines.
+														<li>Operates Windows Registry Editor
+															<li>Uses Linux distros (Lubuntu, Puppy Linux, Ubuntu) and is comfortable using terminals
+																<li>Able to manually remove computer viruses
+																	<li>Familiar with code signing certificates and firewalls</ul>
+										</div>
+										<br>
+										<h2>HARDWARE SKILLS:</h2>
+										<div id="left">
+											<ul>
+												<li>Knowledgeable on hardware and software trends (current and legacy)
+													<li>Can build personal computers and clean computer internals
+														<li>Can overclock and underclock CPUs and GPUs
+															<li>Can solder electronic components to PCBs and operate an EPROM Programmer
+																<li>Familiar with differences in VGA, DVI, HDMI, Display Port, and Thunderbolt graphics technologies
+																	<li>Recognizes internal storage technologies such as M.2, SATA, SCSI, and SSD
+																		<li>Familiar with motherboard hardware standards such as ATX, Micro ATX, CPU socket types, DDR RAM standards, expansion slot types, and power connection types
+																			<li>Knows about US electrical codes</ul>
+											<br>
+											<h2>GRAPHIC ARTS SKILLS:</h2>
+											<div id="left">
+												<ul>
+													<li>Able to draw multi-view (including isometric view) technical drawings in AutoCAD
+														<li>Can make visual media appear to be from other time periods, such as making modern cartoons appear cell animated, and transforming an HD video to look like it was recorded on a VHS tape.
+															<li>Able to design websites employing responsive design (having mobile friendly and desktop friendly versions of a page)
+																<li>Familiar with editing SVG files in a text editor
+																	<li>Can create fonts, logos, GUI icons, pixel art and more
+																		<li>Knowledgeable about various elements of art, such as color theory, perspective, human anatomy
+																			<li>Knowledgeable on various art techniques such as rotoscoping, vectorizing raster images, cell shading </ul>
+											</div>
+										</div>
+									</main>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+	<br>
+	<br> </body>
+
+</html>

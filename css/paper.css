@@ -1,0 +1,214 @@
+@viewport {
+  width: device-width;
+    zoom: 1;
+    min-zoom: 0.5;
+    max-zoom: 3;
+    user-zoom: fixed;
+}
+html {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-family: times;
+  background-image: url(/assets/img/grid.png);
+  image-rendering: high-quality;
+  background-repeat: xy;
+  background-size: 8%;
+  background-attachment: fixed;
+}
+#border7 {
+  border: 0.001em solid;
+  width: calc(50% + 300px);
+  border-style: solid;
+  border-color: #F0F0F0;
+  background-image: url(/assets/img/wildtextures-seamless-paper-texture.png);
+  opacity: 0.97;
+  padding: 0px;
+  box-shadow: 0em 0.1em 0.2em 0.01em rgba(0, 0, 0, 0.15);
+  border-radius: 0.1em;
+  transform: rotateZ(0.12deg);
+  z-index: -1;
+}
+#border6 {
+  border: 0.001em solid;
+  width: 100%;
+  height: 8em;
+  border-style: solid;
+  border-color: rgba(30, 30, 20, 0.1);
+  background-image: url(/assets/img/wildtextures-seamless-paper-texture.jpg);
+  background-size: 25em;
+  padding: 0px;
+  box-shadow: 0em 0.1em 0.2em 0.005em rgba(0, 0, 0, 0.15);
+  z-index: -8;
+  position: absolute;
+  top: 0%;
+  right: 0%
+}
+#bordera {
+  border: solid;
+  background-color: #F0E970;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0.2em 0.2em 0.005em rgba(0, 0, 0, 0.2);
+  border-radius: 0.08em;
+  opacity: 0.98;
+  font-family: "Arial";
+  transform: rotateZ(0.8deg);
+}
+#bordera:hover {
+  transition-delay: 0.05s;
+ -moz-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -ms-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -o-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -webkit-transform: rotateX(200deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ box-shadow: 0px 0.4em 0.4em 0.01em rgba(0, 0, 0, 0.15);
+}
+#borderb {
+  border: solid;
+  background-color: #F0A970;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0.2em 0.2em 0.005em rgba(0, 0, 0, 0.2);
+  border-radius: 0.08em;
+  opacity: 0.98;
+  font-family: "arial";
+  transform: rotateZ(-0.5deg);
+}
+#borderb:hover {
+  transition-delay: 0.05s;
+ -moz-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -ms-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -o-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -webkit-transform: rotateX(200deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ box-shadow: 0px 0.4em 0.4em 0.01em rgba(0, 0, 0, 0.15);
+}
+#borderc {
+  border: solid;
+  background-color: #70A9F0;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0.2em 0.2em 0.005em rgba(0, 0, 0, 0.2);
+  border-radius: 0.08em;
+  opacity: 0.98;
+  font-family: "arial";
+    transform: rotateZ(0.3deg);
+}
+#borderc:hover {
+  transition-delay: 0.05s;
+ -moz-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -ms-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -o-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -webkit-transform: rotateX(200deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ box-shadow: 0px 0.4em 0.4em 0.01em rgba(0, 0, 0, 0.15);
+}
+#borderd {
+  border: solid;
+  background-color: #70F0A0;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0.2em 0.2em 0.005em rgba(0, 0, 0, 0.2);
+  border-radius: 0.08em;
+  opacity: 0.98;
+  font-family: "arial";
+  transform: rotateZ(-0.6deg);
+}
+#borderd:hover {
+  transition-delay: 0.05s;
+ -moz-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -ms-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -o-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -webkit-transform: rotateX(200deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ box-shadow: 0px 0.4em 0.4em 0.01em rgba(0, 0, 0, 0.15);
+}
+#bordere {
+  border: solid;
+  background-color: #A97BA9;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0.2em 0.2em 0.005em rgba(0, 0, 0, 0.2);
+  border-radius: 0.08em;
+  opacity: 0.98;
+  font-family: "arial";
+  transform: rotateZ(0.7deg);
+}
+#bordere:hover {
+  transition-delay: 0.05s;
+ -moz-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -ms-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -o-transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ -webkit-transform: rotateX(200deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ transform: rotateX(20deg) rotateY(-10deg) rotateZ(-3deg) translateX(-0.2em);
+ box-shadow: 0px 0.4em 0.4em 0.01em rgba(0, 0, 0, 0.15);
+}
+#sitenav{
+  position: fixed;
+  top: 20%;
+  left: -0.25%;
+}
+p {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  transform: rotateZ(-0.08deg);
+  z-index: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  text-shadow: 0 0 0.005em #040010;
+  opacity: 0.8;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: "Times New Roman", Times, serif;
+}
+#navtext {
+  padding: 0.2em;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: darkpurple;
+}
+a:hover {
+  color: darkblue;
+}
+a:active {
+  text-decoration: none;
+}
+::-moz-selection { /* Code for Firefox */
+  color: #202210;
+  background: #F0FF0080;
+}
+
+::selection {
+  color: #202210;
+  background: #F0FF0080;
+}
+img.robot {
+  position: absolute;
+  position: fixed;
+  top: 11.5em;
+  right: calc(3em - 30px);
+  z-index: -2;
+  width: 4em;
+  -webkit-filter: drop-shadow( 0em 0.015em 0.015em rgba(0, 0, 0, 0.4));
+  filter: drop-shadow( 0em 0.015em 0.015em rgba(0, 0, 0, 0.4));
+  image-rendering: smooth;
+  transform: rotateZ(-5.15deg);
+}
+img.doodle {
+  position: absolute;
+  position: fixed;
+  top: 28em;
+  left: calc(2em - 30px);
+  z-index: -2;
+  width: 28em;
+}

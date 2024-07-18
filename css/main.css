@@ -1,0 +1,23 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.temple_bg {
+  background-image: url("/assets/img/greek%20temple%20final%20inkscape%20edit.svg"),
+  linear-gradient(-180deg, #000, #003);
+  shape-rendering: smooth;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+h1 {
+  text-shadow: 0 0 0.005em #040010;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  text-align: center;
+  top: 5%;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
